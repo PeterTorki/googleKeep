@@ -71,7 +71,9 @@ class App {
       const title = this.$noteTitle.value;
       const text = this.$noteText.value;
       const hasNote = title || text;
-      if (hasNote) {
+      const isSpace = title.split(" ").every(char => char === "") && text.split(" ").every(char => char === "");
+
+      if (hasNote && !isSpace) {
         // add note
         this.addNote({ title, text });
       }
@@ -93,10 +95,13 @@ class App {
     const title = this.$noteTitle.value;
     const text = this.$noteText.value;
     const hasNote = title || text;
-
+    const isSpace = title.split(" ").every(char => char === "") && text.split(" ").every(char => char === "");
+    
     if (isFormClicked) {
       this.openForm();
-    } else if (hasNote) {
+    }
+     else if (hasNote && !isSpace) {
+      console.log(title.split(" "))
       this.addNote({ title, text });
     } else {
       this.closeForm();
