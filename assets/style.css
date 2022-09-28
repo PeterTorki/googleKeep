@@ -300,7 +300,6 @@ input:focus {
 }
 
 #color-tooltip {
-    transform: translate(-50%, -50%);
     border-bottom: 2px solid #fff;
     position: absolute;
     top: -6%;
