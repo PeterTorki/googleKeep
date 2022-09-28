@@ -302,10 +302,10 @@ input:focus {
 #color-tooltip {
     border-bottom: 2px solid #fff;
     position: absolute;
-    top: -6%;
+    top: -50px;
     background: #fff;
     border: 1px solid black;
-    left: -2%;
+    left: -20px;
     z-index: 20;
     border-radius: 5px;
     display: none;
