@@ -303,7 +303,7 @@ input:focus {
     transform: translate(-50%, -50%);
     border-bottom: 2px solid #fff;
     position: absolute;
-    top: -8%;
+    top: -6%;
     background: #fff;
     border: 1px solid black;
     left: -2%;
